@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                boxShadow:
+                    {
+                        'bdr': 'inset 0 0 0 2px white'
+                    }
+            }
+          }
+        }
+      </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-gradient-to-b from-[#ffffff] via-[#f2f2f2] to-[#2f2d2c]">
+    
+        <header class="flex flex-col mx-auto sticky">
+            <div class="LOGOACCOUNT lg:w-[75rem] mx-auto flex flex-row justify-between items-end">
+                <img src="images/logo.png" class="w-36 mx-auto lg:-mx-2" alt="">
+                <div class="hidden lg:flex flex-row space-x-12 mb-3 text-sm text-gray-400">
+                    <div class="fitem">Welcome Jeffery (<span class="text-blue-500 cursor-pointer hover:underline">Sign
+                            Out</span>)</div>
+                    <div class="fitem">My Account</div>
+                    <div class="fitem">999 items - $9999.99 <span
+                            class="ml-1 text-blue-500 cursor-pointer hover:underline">Checkout</span></div>
+                    <div class="fitem">Customer Service</div>
+                </div>
+            </div>
+    
+             <nav class="NAVBAR h-12 mt-2 flex flex-row items-center border bg-clip-content border-y-1 border-x-0 shadow-bdr border-[#d9d7d8] bg-[#d9d7d8] justify-between">
+                <div class="smallNav xl:hidden w-[100em] flex flex-row justify-between">
+                    <button class="menu-button ml-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                          </svg>
+                    </button>
+                    <button class="search-button mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="gray" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                          </svg>
+                    </button>
+                </div>
+            
+                    <div class="FEATURES w-[76rem] mx-auto hidden xl:flex items-center justify-between text-sm">
+                    <ul class="justify-between flex">
+                        <li class="py-2.5 pl-2 pr-5 border-r-white border border-l-transparent border-y-transparent">Dining</li>
+                        <li class="py-2.5 px-6 border border-r-white border-y-transparent">Crystal</li>
+                        <li class="py-2.5 px-6 border border-r-white border-y-transparent">By Brand</li>
+                        <li class="py-2.5 px-6 border border-r-white border-y-transparent">What's New</li>
+                        <li class="py-2.5 px-6 border border-r-white border-y-transparent">Find a Gift</li>
+                        <li class="py-2.5 px-6 border border-r-white border-y-transparent">Wedding Ideas</li>
+                        <li class="py-2.5 px-6 border border-r-white border-y-transparent">Clearance & Special Offers</li>
+                    </ul>
+                        <div class=" bg-[#d9d7d8] text-gray-500 text-sm flex flex-row px-2 justify-between">
+                            <input type="text" class="border border-gray-600 px-2 py-1 w-full" placeholder="Search anything"/>
+                            <input type="button" class="w-12 border mx-2 border-gray-600 bg-gray-200 rounded-md" value="GO" />
+                        </div> 
+                    </div>
+                    
+                    
+            </nav>
+            <div class="dropdown hidden mt-0.5 w-full lg:hidden bg-[#d9d7d8] text-gray-500 text-sm duration-1000 delay-1000">
+                        <a class="mx-2 block py-2" href="#">Dining</a>
+                        <a class="mx-2 block py-2" href="#">Crystal</a>
+                        <a class="mx-2 block py-2" href="#">By Brand</a>
+                        <a class="mx-2 block py-2" href="#">What's New</a>
+                        <a class="mx-2 block py-2" href="#">Find a Gift</a>
+                        <a class="mx-2 block py-2" href="#">Wedding Ideas</a>
+                        <a class="mx-2 block py-2" href="#">Clearance & Special Offers</a>
+            </div>
+            <div class="dropdown-search hidden mt-0.5 w-full bg-[#d9d7d8] text-gray-500 text-sm duration-1000 delay-1000 flex flex-row px-2 py-2 justify-between">
+                <input type="text" class="border border-gray-600 p-2 rounded-md w-full" placeholder="Search anything"/>
+                <input type="button" class="w-28 border mx-2 border-gray-600 bg-gray-200 rounded-md" value="Search" />
+            </div> 
+    
+            
+        </header>
+        <div class="my-2 px-2 flex justify-between items-center flex-col lg:w-[76rem] mx-auto lg:flex-row">
+            <ul class="text-xs lg:text-sm flex space-x-8 text-[#2f456b]">
+                <li class="cursor-pointer hover:underline">Free Shipping on Orders above $150</li>
+                <li class="cursor-pointer hover:underline">Holiday Platters</li>
+                <li class="cursor-pointer hover:underline">Celebrate Thanksgiving</li>
+            </ul>
+    
+            <div class="flex text-xs lg:text-sm items-center text-blue-400 lg:mr-14">
+                <img src="images/bridelRegistry.jpg" alt="bridalRegistry">
+                <div>Bridal Registry</div>
+            </div>
+        </div>
+
+        
+        <div class="homepage mx-auto lg:w-[76.5rem] flex flex-col lg:flex-row lg:p-3 lg:bg-white">
+            <div class="lg:w-[72%]">
+                <img src="images/Recipe.jpg" alt="recipe" class="w-full mx-auto">
+            </div>
+            <div class="bg-[#373634] lg:ml-3 lg:w-[28%]">
+                <div class="bg-transparent m-2 border border-0.5">
+                    <div class="m-5 h-[90%]">
+                        <h1 class="text-4xl font-thin text-[#ecebeb] my-5 mx-2">Dress your table</h1>
+                        <h2 class="text-[#8a8889] my-5 mx-3">Create a fabulous new look for your next event. Choose from
+                            various styles and ideas.</h2>
+                        <div class="text-[#ecebeb]">
+                            <div class="px-3 border-b border-[#8a8889] py-2">Contemporary</div>
+                            <div class="px-3 border-b border-[#8a8889] py-2">Traditional</div>
+                            <div class="px-3 border-b border-[#8a8889] py-2">Brunch</div>
+                            <div class="px-3 border-b border-[#8a8889] py-2">Themes</div>
+                            <div class="px-3 border-b border-[#8a8889] py-2">Buffet</div>
+                            <div class="px-3 py-2">Wine & Cheese</div>
+                        </div>
+                        <div class="mx-3 text-sm my-6">
+                            <a href="#" class="text-[#8a8889] underline">See More Dress Your Table Ideas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div
+            class="items md:mx-auto lg:w-[76.5rem] flex flex-col md:flex-row lg:p-3 md:border md:border-black md:bg-black">
+            <div class="item1 lg:w-1/3 h-52 bg-white border bg-left-bottom bg-contain bg-no-repeat"
+                style="background-image: url(images/promo_glass.png)">
+                <p class="my-4 text-center text-lg">You'll love our fine stemware collection</p>
+                <p class="text-sm -my-4 text-center text-gray-500">Lorem ipsum dolor sit el amet consectetur
+                    adipisicing.</p>
+                <p class="text-blue-400 text-sm text-right mt-11 mr-8 hover:underline cursor-pointer ">See all stemware
+                </p>
+            </div>
+            <div class="item1 lg:w-1/3 h-52 bg-white border  bg-contain bg-bottom bg-no-repeat"
+                style="background-image: url(images/promo_plates.png)">
+                <p class="my-4 text-left mx-6 text-lg">Home accent for the holidays</p>
+                <p class="text-sm -my-4 text-left mx-6 text-gray-500">Lorem ipsum dolor in amet, consectetur adipisicing
+                    elit.</p>
+                <p class="text-blue-400 text-sm text-right mt-11 mr-8 hover:underline cursor-pointer ">See all home
+                    accents</p>
+            </div>
+            <div class="item1 lg:w-1/3 h-52 bg-white border bg-contain bg-right-bottom bg-no-repeat"
+                style="background-image: url(images/promo_album.png)">
+                <p class="mt-4 text-left mx-6 text-lg">Mikasa clearance</p>
+                <p class="-mt-1 text-left mx-6 text-lg">sale 20% to 80% off</p>
+                <p class="text-sm mt-1.5 text-left mx-6 text-gray-500">Ut wisi enim ad minim veniam</p>
+                <p class="text-sm  text-left mx-6 text-gray-500">quis nostrud exerci tation.</p>
+                <p class="text-blue-400 text-sm text-left mx-6 mt-6 mr-8 hover:underline cursor-pointer">See all home
+                    accents</p>
+            </div>
+        </div>
+        <div
+            class=" flex flex-col-reverse md:flex-row md:mx-auto md:justify-between lg:mx-auto lg:w-[76.5rem] text-[#8a8889]">
+            <div class="ml-6 md:ml-0 row1 mt-2 text-xs flex flex-col">
+                <ul class="flex md:space-x-2 md:mx-0">
+                    <li class="cursor-pointer underline md:ml-0 pr-2 md:pr-0.5">
+                        <a href="#">About Mikasa</a>
+                        </li>
+                    <li class="cursor-pointer underline border-l-[2px] px-2 md:pl-2 md:pr-0.5 border-[#8a8889]">Customer
+                        Service</li>
+                    <li class="cursor-pointer underline border-l-[2px] px-2 border-[#8a8889]">Privacy Policy</li>
+                </ul>
+                <div class="mt-2.5 ">For assistance, call us at 1.866.645.2721 (Mon - Fri 8:30am - 6:00pm est) or <span
+                        class="underline cursor-pointer">Email Us</span></div>
+                <div class="mt-3"> &#169; Copyright 2008 Mikasa & Company </div>
+            </div>
+            <div>
+                <div class="mt-2 ml-6 md:ml-0 row1 text-xs flex flex-col md:flex-row">Signup to receive special offers &
+                    promotions from Mikasa</div>
+                <input type="text" placeholder="Enter your email address"
+                    class="text-xs ml-6 md:ml-0 mt-2 pl-2 text-left pr-6 py-0.5 outline outline-1 outline-gray-400">
+                <button
+                    class="ml-2 px-1.5 py-0.5 bg-white border border-0.5 text-xs border-slate-500 text-black rounded-md">SIGN
+                    UP</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
